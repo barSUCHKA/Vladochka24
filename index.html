@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>С Днем Рождения!</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #f0e68c;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        color: #333;
+        overflow: hidden;
+      }
+      h1 {
+        font-size: 3em;
+        margin-top: 50px;
+        animation: bounce 1s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+      .balloons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .balloon {
+        position: absolute;
+        bottom: -300px;
+        animation: rise 5s infinite;
+        opacity: 0.8;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        z-index: -1;
+      }
+      @keyframes rise {
+        0% {
+          transform: translateY(300px) rotate(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .balloon1 {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/022/507/125/large_2x/crazy-emoji-icon-illustration-free-png.png);
+      }
+      .balloon2 {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/029/239/953/large_2x/smiling-face-with-heart-eyes-3d-emoji-icon-png.png);
+      }
+      .balloon3 {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/028/642/159/large_2x/smiling-face-with-party-hat-3d-emoji-icon-png.png);
+      }
+      .balloon4 {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/029/239/972/non_2x/money-tongue-pop-out-mouth-face-3d-emoji-icon-png.png);
+      }
+      .balloon5 {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/029/239/957/non_2x/rolling-on-the-floor-laughing-face-3d-emoji-icon-png.png);
+      }
+
+      .conf1 {
+        background-color: red;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        opacity: 0.8;
+        animation: fall 3s infinite;
+      }
+      .conf2 {
+        background-color: blue;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        opacity: 0.8;
+        animation: fall 3s infinite;
+      }
+      .conf3 {
+        background-color: green;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        opacity: 0.8;
+        animation: fall 3s infinite;
+      }
+      .conf4 {
+        background-color: purple;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        opacity: 0.8;
+        animation: fall 3s infinite;
+      }
+      @keyframes fall {
+        0% {
+          transform: translateY(0) rotate(0);
+        }
+        100% {
+          transform: translateY(100vh) rotate(720deg);
+        }
+      }
+
+      body {
+        background: linear-gradient(90deg, #f0e68c, #ffcc00);
+        animation: backgroundAnimation 10s infinite alternate;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-color: #f0e68c;
+        }
+        100% {
+          background-color: #ffcc00;
+        }
+      }
+
+      .floating {
+        position: absolute;
+        animation: float 6s ease-in-out infinite;
+        background-image: url(https://i3.wp.com/www.pinclipart.com/picdir/big/520-5200885_thumbs-up-smiley-funny-boy-funny-clipart.png);
+        background-size: cover;
+        z-index: -1;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      p {
+        margin: auto;
+        font-size: 18px;
+      }
+
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="balloons">
+      <img class="balloon balloon1" style="left: 10%; animation-delay: 0s" />
+      <img class="balloon balloon2" style="left: 30%; animation-delay: 1s" />
+      <img class="balloon balloon3" style="left: 50%; animation-delay: 2s" />
+      <img class="balloon balloon4" style="left: 70%; animation-delay: 3s" />
+      <img class="balloon balloon5" style="left: 90%; animation-delay: 4s" />
+    </div>
+    <div class="wrap">
+      <h1>С Днем Рождения, Владочка!🎉</h1>
+      <p>
+        Сегодня день, когда ты стала еще на один год <span>мудрее</span>,
+        <span>красивее</span> и <span>интереснее</span>. Ты — <span>свет</span> в моем мире, и я хочу, чтобы этот день
+        стал для тебя <span>особенным</span>. <br> Пусть твоя жизнь будет <span>насыщенной</span>, как
+        насыщенный цвет <span>радуги</span>. Пусть <span>каждый</span> день приносит тебе <span>новые</span>
+        впечатления и открытия, а все трудности <span>обходят</span> стороной! <br> Я желаю тебе
+        найти свое <span>счастье</span> в мелочах, <span>наслаждаться</span> каждой минутой и помнить, что
+        ты заслуживаешь только <span>лучшего</span>. Пусть в твоей жизни будет столько
+        <span>приятных</span> сюрпризов, сколько <span>звёзд</span> на небе. <br> Смех, радость и удача пусть
+        идут с <span>тобой</span> по жизни, а все двери открываются только в самые <span>лучшие</span>
+        места! Ты <span>сильная</span> и <span>вдохновляющая</span>, и я горжусь тем, что у меня есть
+        такая <span>замечательная</span> сестра. <br> Давай <span>отпразднуем</span> этот день так, чтобы он
+        остался в памяти <span>навсегда</span>! Желаю, чтобы этот год был полон <span>вдохновения</span>,
+        <span>достижений</span> и <span>позитивных</span> перемен. <br> С <span>любовью</span> и <span>бесконечными</span>
+        поздравлениями, Тимоша💖
+      </p>
+    </div>
+
+    <script>
+      function Rand(max) {
+        return Math.floor(Math.random() * max);
+      }
+
+      function createConfetti() {
+        const confetti = document.createElement("div");
+        const color = Rand(4);
+        if (color === 0) {
+          confetti.className = "conf1";
+        } else if (color === 1) {
+          confetti.className = "conf2";
+        } else if (color === 2) {
+          confetti.className = "conf3";
+        } else {
+          confetti.className = "conf4";
+        }
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.top = Math.random() * 100 + "vh";
+        document.body.appendChild(confetti);
+        setTimeout(() => {
+          confetti.remove();
+        }, 3000);
+      }
+      setInterval(createConfetti, 100);
+
+      function createFloatingElement() {
+        const floatingElement = document.createElement("div");
+        floatingElement.className = "floating";
+        floatingElement.style.left = Math.random() * 100 + "vw";
+        floatingElement.style.top = Math.random() * 100 + "vh";
+        floatingElement.style.width = "80px";
+        floatingElement.style.height = "55px";
+        document.body.appendChild(floatingElement);
+        setTimeout(() => {
+          floatingElement.remove();
+        }, 6000);
+      }
+      setInterval(createFloatingElement, 1000);
+    </script>
+  </body>
+</html>
